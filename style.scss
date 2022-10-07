@@ -4,3 +4,9 @@
 * {
   box-sizing: border;
 }
+
+button {
+  @include primaryButtonStyle;
+  color: black;
+  background-color: grey;
+}

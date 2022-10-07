@@ -1,6 +1,6 @@
 #main-grid-area {
   border: 1px solid black;
-  height: 1000px;
+  height: 100%;
   display: grid;
   width: 90%;
   grid-gap: 10px;
@@ -34,4 +34,22 @@
 
 * {
   box-sizing: border;
+}
+
+button {
+  background-color: #199de5;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  color: black;
+  background-color: grey;
+}
+button:hover {
+  background-color: #f5f7f8;
+  color: black;
+}
+button i {
+  font-size: 0.8rem;
+  padding-right: 10px;
 }/*# sourceMappingURL=style.css.map */
