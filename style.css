@@ -1,0 +1,37 @@
+#main-grid-area {
+  border: 1px solid black;
+  height: 1000px;
+  display: grid;
+  width: 90%;
+  grid-gap: 10px;
+  grid-template-columns: 30% 50% 20%;
+  grid-template-areas: "leftGrid centerGrid rightGrid";
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  #main-grid-area {
+    background-color: green;
+    grid-template-columns: 100%;
+    grid-template-areas: "leftGrid" "centerGrid" "rightGrid";
+  }
+}
+.left-grid {
+  border: 1px solid black;
+  grid-area: leftGrid;
+}
+
+.center-grid {
+  border: 1px solid black;
+  grid-area: centerGrid;
+}
+
+.right-grid {
+  border: 1px solid black;
+  grid-area: rightGrid;
+}
+
+* {
+  box-sizing: border;
+}/*# sourceMappingURL=style.css.map */

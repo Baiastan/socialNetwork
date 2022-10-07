@@ -1,0 +1,39 @@
+@import "./utilities";
+
+#main-grid-area {
+  border: $blackBorder;
+  height: 1000px;
+  display: grid;
+  width: 90%;
+  grid-gap: 10px;
+  grid-template-columns: 30% 50% 20%;
+
+  grid-template-areas: "leftGrid centerGrid rightGrid";
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  #main-grid-area {
+    background-color: green;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "leftGrid"
+      "centerGrid"
+      "rightGrid";
+  }
+}
+
+.left-grid {
+  border: $blackBorder;
+  grid-area: leftGrid;
+}
+
+.center-grid {
+  border: $blackBorder;
+  grid-area: centerGrid;
+}
+.right-grid {
+  border: $blackBorder;
+  grid-area: rightGrid;
+}

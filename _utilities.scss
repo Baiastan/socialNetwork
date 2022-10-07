@@ -1,0 +1,22 @@
+$hoverColor: #f5f7f8;
+$primaryBlueButtonColor: #199de5;
+$homeButtonColor: #076490;
+
+$blackBorder: 1px solid black;
+
+@mixin primaryButtonStyle {
+  background-color: $primaryBlueButtonColor;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  &:hover {
+    background-color: $hoverColor;
+    color: black;
+  }
+
+  i {
+    font-size: 0.8rem;
+    padding-right: 10px;
+  }
+}
