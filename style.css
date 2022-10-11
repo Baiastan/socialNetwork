@@ -25,7 +25,7 @@
 .center-grid {
   border: 1px solid black;
   grid-area: centerGrid;
-}
+}  
 
 .right-grid {
   border: 1px solid black;
@@ -34,4 +34,65 @@
 
 * {
   box-sizing: border;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */ 
+
+
+
+/* center-grid-row2-Nurzada */  
+.center-grid-row2{
+  padding: 10px; 
+  font-family: "Open Sans", sans-serif;
+}  
+.top-content{
+display: flex;
+justify-content: space-between; 
+} 
+
+.avatar{
+  border-radius: 50%; 
+  width: 60px; 
+  height: 60px;
+} 
+
+.rs{
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.time{
+  color:  rgba(128, 128, 128, 0.987);
+} 
+
+hr{
+  border: 0;
+    border-top: 1px solid #eee;
+    margin: 20px 0;
+}
+
+.post-text{
+  font-size: 16px; 
+} 
+
+.img-content img{
+max-width: 200px;
+}
+
+.button-content button{
+  background-color:  #199de5;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+}
+
+.button-content button:hover{
+  background-color:#f5f7f8;
+color: black; 
+cursor: pointer;
+} 
+.button-content i{
+  font-size: 0.8rem;
+    padding-right: 10px;
+}
+
