@@ -1,3 +1,102 @@
 @import "./utilities";
 
+body {
+    font-family: "Open Sans", sans-serif;
+}
+/* Interests*/
+.wrapper1 {
+    padding: 12px;
+     box-shadow: 5px 3px 10px 3px gray;
+     margin-bottom:20px;
+
+  border-radius: 5px;
+}
+
+p {
+  margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 3px;
+
+}
+
+#first-two {
+    color: white;
+    background: $homeButtonColor;
+    padding: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 2.5px;
+
+}
+
+#blue {
+    color: white;
+    background: $primaryBlueButtonColor;
+    padding: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 2.5px;
+}
+
+#dark-grey {
+    background: #9EB1BB;
+    padding: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 2.5px;
+}
+
+#grey {
+    background: #BECBD2;
+    padding: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 2.5px;
+
+}
+
+#light-grey {
+    background: #DFE5E8;;
+    padding: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 2.5px;
+}
+
+#beige {
+    background: #F4F7F8;
+    padding: 4px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 2.5px;
+}
+
+td {
+      font-size: 12px;
+    display: inline-block; 
+}
+
+/* Alertbox*/
+
+.alertbox {
+   padding: 12px;
+    box-shadow: 5px 3px 10px 3px gray;
+    background: #DFE5E8;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.fa-solid {
+    @include primaryButtonStyle();
+  background-color: #BDCBD2;
+  padding: 10px 15px;
+  position: absolute;
+  color: black;
+  right: 0;
+  top: 0;
+}
+
+
+
 //Put your scc codes here please.
