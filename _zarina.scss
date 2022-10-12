@@ -1,0 +1,127 @@
+@import "./_utilities";
+@import "./_gridMainArea";
+
+@mixin flexBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin boxParameters {
+    box-shadow: 5px 3px 10px 1px lightgrey;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@mixin alignFlex {
+    display: flex;
+    align-items: center;
+}
+
+/* Zarina 1 part */
+
+.left-grid-row1 {
+    height: 35vh;   
+    @include boxParameters();
+    grid-template-columns: 1;
+    grid-template-rows: 1 / 2;
+      img {
+        border-radius: 50%;
+        width: 35%;
+        margin:  10px 10px;
+            }
+          }
+    .profile-top {
+        @include flexBox();
+        flex-direction: column;
+               
+        }
+        .left-grid-top-icons {
+            margin-right: 10px;
+            color: grey;
+         }
+         h4 {
+            margin: 0;
+         }
+
+
+.job-title, .location, .date-of-birth {
+    @include alignFlex();
+    line-height: 0.05;
+    font-size: 13px;
+   
+}
+
+
+/* Zarina 2 part */
+
+
+.left-grid-row2 {
+    @include boxParameters();
+    height: 55%;
+    padding: 0px;
+    margin: 0px;
+    grid-template-columns: 1;
+    grid-template-rows: 2 / 3;
+    
+} 
+    .my-groups, .my-events, .my-photos {
+        @include alignFlex(); 
+        color: white;
+        
+       
+}
+    .left-grid-icons {
+            margin-right: 20px;                    
+           
+}
+    .text,.left-grid-icons {
+        margin-left: 10px; 
+}
+    .clickable {
+            background-color: #199de5;
+            border: none;
+            width: 100%;
+    }
+    .clickable:hover {
+            background-color: $hoverColor;
+            color: black;
+            text-decoration: none;
+            border: none;
+           }
+            
+           
+.photo-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;  
+        img {
+        width: 35%;
+        height: 30%;
+        margin: 1em;
+    }
+}
+
+@media  screen and (max-width: 600px) {
+
+    .left-grid-row1 {
+        height: 45vh;
+    }
+    .photo-images {
+    flex-direction: column;
+     align-content: center;
+    }
+    .photo-images img {
+        width: 60%;
+        height: 50%;
+
+    }
+    .left-grid-row2 {
+        height: 100%;
+    }
+}
+    
+
+    

@@ -32,40 +32,6 @@
   grid-area: rightGrid;
 }
 
-#main-grid-area {
-  border: 1px solid black;
-  height: 1000px;
-  display: grid;
-  width: 90%;
-  grid-gap: 10px;
-  grid-template-columns: 30% 50% 20%;
-  grid-template-areas: "leftGrid centerGrid rightGrid";
-  margin: 20px auto;
-  box-sizing: border-box;
-}
-
-@media screen and (max-width: 600px) {
-  #main-grid-area {
-    background-color: green;
-    grid-template-columns: 100%;
-    grid-template-areas: "leftGrid" "centerGrid" "rightGrid";
-  }
-}
-.left-grid {
-  border: 1px solid black;
-  grid-area: leftGrid;
-}
-
-.center-grid {
-  border: 1px solid black;
-  grid-area: centerGrid;
-}
-
-.right-grid {
-  border: 1px solid black;
-  grid-area: rightGrid;
-}
-
 /* Zarina 1 part */
 .left-grid-row1 {
   height: 35vh;
@@ -172,7 +138,4 @@ h4 {
   .left-grid-row2 {
     height: 100%;
   }
-}
-* {
-  box-sizing: border;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=upperleftgrid.css.map */
