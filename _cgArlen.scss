@@ -1,4 +1,7 @@
-.center-grid {    /*added grid parameter. delete if there is another one, in the main .css file*/
+@import "./utilities";
+
+.center-grid {
+  /*added grid parameter. delete if there is another one, in the main .css file*/
   display: grid;
   row-gap: 10px;
   font-family: sans-serif;
@@ -6,7 +9,7 @@
 .post-container {
   /* border: 2px solid blue; */
   padding: 1rem;
-  box-shadow: 0px 3px 8px hsl(0deg 0% 0% / 0.30);
+  box-shadow: 0px 3px 8px hsl(0deg 0% 0% / 0.3);
 }
 .post-author {
   /* border: 1px solid green; */
@@ -27,11 +30,12 @@ hr {
   opacity: 0.3;
 }
 .post-interactions {
-    display: flex;
-    gap: 0.3rem;
+  display: flex;
+  gap: 0.3rem;
 }
-.post-likes, .post-comment {
-    display: flex;
+.post-likes,
+.post-comment {
+  display: flex;
 }
 .author-info {
   gap: 10px;
@@ -40,9 +44,8 @@ hr {
   max-height: 3rem;
   max-width: 3rem;
   border-radius: 50%;
-  box-shadow: 1px 4px 8px hsl(0deg 0% 0% / 0.30);
+  box-shadow: 1px 4px 8px hsl(0deg 0% 0% / 0.3);
   overflow: hidden;
-  
 }
 img {
   height: 100%;
@@ -55,22 +58,18 @@ img {
   color: black;
   font-size: 0.8rem;
 }
-button.post-likes, button.post-comment {
-  color: white;
-  background-color: #199de5;
-  font-size: 0.8rem;
+button.post-likes,
+button.post-comment {
+  @include primaryButtonStyle();
 }
-button:hover {
-  color: black;
-  background: lightgray;
-}
+
 footer.footer {
   display: block;
 }
 .footer-top {
   padding-left: 1rem;
   color: white;
-  background: #199de5;
+  background: $primaryBlueButtonColor;
   height: 4rem;
   display: flex;
   align-items: center;
@@ -101,7 +100,6 @@ a.dev-website {
     border-radius: 10px;
     padding-left: 0.8rem;
     width: 8vw;
-
   }
   button.post-comment {
     border-radius: 10px;
@@ -115,7 +113,8 @@ a.dev-website {
     display: flex;
     flex-wrap: wrap;
   }
-  .post-container p, .post-link {
+  .post-container p,
+  .post-link {
     font-size: 3vw;
   }
 }

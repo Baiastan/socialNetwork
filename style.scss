@@ -1,12 +1,7 @@
 @import "./utilities";
 @import "./_gridMainArea";
-
+@import "./cgArlen";
+@import "./kamila";
 * {
   box-sizing: border;
-}
-
-button {
-  @include primaryButtonStyle;
-  color: black;
-  background-color: grey;
 }
