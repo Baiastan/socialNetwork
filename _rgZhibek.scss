@@ -20,6 +20,7 @@
     font-size:1rem;
     padding:1rem;
     border-radius:0;
+    cursor:pointer;
     &:hover{
     background:$hoverColor;
     color:black;   
@@ -28,7 +29,6 @@
 
 .right-grid-row1{
     @include rightGridAlign();
-    line-height:0.7;
     button{
         @include rightGridBtn();
         width:95%;

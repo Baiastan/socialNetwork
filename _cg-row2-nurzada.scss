@@ -1,8 +1,12 @@
 @import "./utilities";
 
 .center-grid-row2 {
-  padding: 10px;
-  font-family: "Open Sans", sans-serif;
+  @include boxParameters;
+  // padding: 10px;
+  // font-family: "Open Sans", sans-serif;
+p{
+  @include paragraphStyle;
+}
 }
 .top-content {
   display: flex;
@@ -15,11 +19,11 @@
   height: 60px;
 }
 
-.rs {
-  display: flex;
-  gap: 10px;
-  font-size: 18px;
-}
+// .rs {
+//   display: flex;
+//   gap: 10px;
+//   font-size: 18px;
+// }
 
 .time {
   color: rgba(128, 128, 128, 0.987);
@@ -30,5 +34,8 @@
 }
 
 .img-content img {
-  max-width: 150px;
+  max-width: 48%;
+}
+.user-name{
+  padding:1rem;
 }
