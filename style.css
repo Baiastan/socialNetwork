@@ -728,18 +728,20 @@ hr {
   padding-right: 1rem;
 }
 .center-grid-row1 button {
-  background: #199de5;
-  color: white;
+  background-color: #199de5;
+  padding: 10px 20px;
   font-size: 1rem;
-  padding: 8px 16px;
-  text-align: center;
-  white-space: nowrap;
-  cursor: pointer;
+  color: white;
   border: none;
 }
 .center-grid-row1 button:hover {
-  background: lightgrey;
+  background-color: lightgrey;
   color: black;
+  cursor: pointer;
+}
+.center-grid-row1 button i {
+  font-size: 0.8rem;
+  padding-right: 10px;
 }
 
 * {
