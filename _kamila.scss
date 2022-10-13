@@ -1,16 +1,10 @@
 @import "./utilities";
 
-    .left-grid-row3 {
-        padding: 12px;
-        box-shadow: 5px 3px 10px 3px gray;
-        margin-bottom: 20px;
-        border-radius: 5px;
-      
-        p {
-          margin-bottom: 15px;
-          margin-top: 15px;
-          margin-left: 3px;
-        }
+
+/* Interests*/
+.left-grid-row3 {
+  @include boxParameters();
+
 
         td {
             font-size: 12px;
@@ -78,13 +72,71 @@
             border-radius: 5px;
           }
 
-        .fa-solid {
-            @include primaryButtonStyle();
-            background-color: #BDCBD2;
-            padding: 10px 15px;
-            position: absolute;
-            color: black;
-            right: 0;
-            top: 0;
-           }
-    }
+
+#dark-grey {
+  background: #9eb1bb;
+  padding: 4px;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin: 2.5px;
+}
+
+#grey {
+  background: #becbd2;
+  padding: 4px;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin: 2.5px;
+}
+
+#light-grey {
+  background: #dfe5e8;
+  padding: 4px;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin: 2.5px;
+}
+
+#beige {
+  background: #f4f7f8;
+  padding: 4px;
+  padding-left: 9px;
+  padding-right: 9px;
+  margin: 2.5px;
+}
+
+td {
+  font-size: 12px;
+  display: inline-block;
+}
+
+/* Alertbox*/
+
+.left-grid-row4 {
+  @include boxParameters;
+  padding: 12px;
+  background: #dfe5e8;
+  position: relative;
+  i {
+    @include primaryButtonStyle();
+    background-color: #bdcbd2;
+    padding: 10px 15px;
+    position: absolute;
+    color: black;
+    right: 0;
+    top: 0;
+  }
+}
+
+// .fa-solid {
+//     @include primaryButtonStyle();
+//   background-color: #BDCBD2;
+//   padding: 10px 15px;
+//   position: absolute;
+//   color: black;
+//   right: 0;
+//   top: 0;
+// }
+
+//Put your scc codes here please.
+

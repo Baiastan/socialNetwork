@@ -7,13 +7,6 @@
   align-items: center;
 }
 
-@mixin boxParameters {
-  box-shadow: 5px 3px 10px 1px lightgrey;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
 @mixin alignFlex {
   display: flex;
   align-items: center;
@@ -29,6 +22,22 @@
     width: 35%;
     margin: 10px 10px;
   }
+
+  .profile-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+
+    i {
+      margin-right: 25px;
+      color: grey;
+      font-size: 15px;
+    }
+    div {
+      padding: 10px;
+    }
+  }
 }
 
 .profile-top {
@@ -40,35 +49,20 @@
 
 .left-grid-row2 {
   @include boxParameters();
-  height: 55%;
-  padding: 0px;
-  margin: 0px;
-  grid-template-columns: 1;
-  grid-template-rows: 2 / 3;
-}
-.my-groups,
-.my-events,
-.my-photos {
-  @include alignFlex();
-  color: white;
-}
-.left-grid-icons {
-  margin-right: 20px;
-}
-.text,
-.left-grid-icons {
-  margin-left: 10px;
-}
-.clickable {
-  background-color: #199de5;
-  border: none;
-  width: 100%;
-}
-.clickable:hover {
-  background-color: $hoverColor;
-  color: black;
-  text-decoration: none;
-  border: none;
+
+  button {
+    @include primaryButtonStyle();
+    width: 100%;
+    text-align: left;
+
+    i {
+      margin-right: 15px;
+    }
+  }
+  .text {
+    font-size: 20px;
+    margin: 15px;
+  }
 }
 
 .photo-images {
@@ -77,9 +71,9 @@
   justify-content: center;
   flex-wrap: wrap;
   img {
-    width: 35%;
-    height: 30%;
-    margin: 1em;
+    width: 30%;
+    height: 20%;
+    margin: 0.5em;
   }
 }
 
