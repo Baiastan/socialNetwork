@@ -1,5 +1,78 @@
-@import "./utilities"; 
 
-header {
-  background-color: $primaryBlueButtonColor;
+
+@import "./utilities";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;200;300;400;500&family=Passions+Conflict&family=Raleway:wght@800&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(45,157,229);
+  
+}
+.nav-home-logo {
+  padding: 0 10px;
+  background-color: rgb(26,100,143);
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.nav-home-logo p {
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 10px 5px;
+  color: white;
+  transition: all 0.2s;
+}
+  .nav-home-logo:hover {
+    background-color: rgb(204,204,204);
+    color: black;
+  }
+  
+.nav-home-logo p:hover {
+   color: black;
+}
+
+.fa-house:hover {
+  color: black;
+}
+
+.nav-icons {
+ list-style: none;
+ display: flex;
+}
+
+ 
+
+.fa-earth-asia, .fa-user, .fa-envelope, .fa-house {
+  padding: 15px 30px;
+  color: white;
+  transition: all 0.2s;
+}
+
+.fa-earth-asia:hover {
+ color: black;
+ background-color:white;
+}
+
+.fa-user:hover {
+ color: black;
+ background-color:white;
+}
+.fa-envelope:hover {
+ color: black;
+ background-color:white;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
 }
