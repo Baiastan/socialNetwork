@@ -1,0 +1,100 @@
+@import "./_utilities";
+@import "./_gridMainArea";
+
+@mixin flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin alignFlex {
+  display: flex;
+  align-items: center;
+}
+
+/* Zarina 1 part */
+
+.left-grid-row1 {
+  @include boxParameters();
+h4{
+  font-family: "open sans", sans-serif;
+  font-size:1.2rem;
+}
+  img {
+    border-radius: 50%;
+    width: 35%;
+    margin: 10px 10px;
+  }
+
+  .profile-bottom {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+    @include paragraphStyle;
+
+    i {
+      margin-right: 25px;
+      color: grey;
+      font-size: 15px;
+    }
+    div {
+      padding: 10px;
+    }
+  }
+}
+
+.profile-top {
+  @include flexBox();
+  flex-direction: column;
+}
+
+/* Zarina 2 part */
+
+.left-grid-row2 {
+  @include boxParameters();
+
+  button {
+    @include primaryButtonStyle();
+    width: 100%;
+    text-align: left;
+
+    i {
+      margin-right: 15px;
+    }
+  }
+  .text {
+    @include paragraphStyle;
+    // font-size: 20px;
+    margin: 15px;
+  }
+}
+
+.photo-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  img {
+    width: 30%;
+    height: 20%;
+    margin: 0.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-grid-row1 {
+    height: 45vh;
+  }
+  .photo-images {
+    flex-direction: column;
+    align-content: center;
+  }
+  .photo-images img {
+    width: 60%;
+    height: 50%;
+  }
+  .left-grid-row2 {
+    height: 100%;
+  }
+}

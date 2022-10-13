@@ -1,0 +1,14 @@
+@import "./utilities";
+
+.center-grid-row1 {
+  @include boxParameters();
+  p {
+    padding: 10px;
+    border: 1px solid lightgray;
+    margin-bottom: 20px;
+    @include paragraphStyle;
+  }
+  button {
+    @include primaryButtonStyle();
+  }
+}

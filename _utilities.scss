@@ -13,6 +13,7 @@ $blackBorder: 1px solid black;
   &:hover {
     background-color: $hoverColor;
     color: black;
+    cursor: pointer;
   }
 
   i {
@@ -21,7 +22,15 @@ $blackBorder: 1px solid black;
   }
 }
 
-.center-grid-row2{
-  padding: 10px; 
+.center-grid-row2 {
+  padding: 10px;
   font-family: "Open Sans", sans-serif;
-}  
+}
+
+@mixin boxParameters {
+  box-shadow: 5px 3px 10px 1px lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+}

@@ -1,16 +1,24 @@
 @import "./utilities";
 
-.center-grid {
-  /*added grid parameter. delete if there is another one, in the main .css file*/
-  display: grid;
-  row-gap: 10px;
-  font-family: sans-serif;
+.center-grid-row3,
+.center-grid-row4 {
+  @include boxParameters;
+  p {
+    @include paragraphStyle;
+  }
 }
-.post-container {
-  /* border: 2px solid blue; */
-  padding: 1rem;
-  box-shadow: 0px 3px 8px hsl(0deg 0% 0% / 0.3);
-}
+// .center-grid {
+
+//   /*added grid parameter. delete if there is another one, in the main .css file*/
+//   // display: grid;
+//   //row-gap: 10px;
+//   // font-family: sans-serif;
+// }
+// .post-container {
+//   /* border: 2px solid blue; */
+//   // padding: 1rem;
+//   // box-shadow: 0px 3px 8px hsl(0deg 0% 0% / 0.3);
+// }
 .post-author {
   /* border: 1px solid green; */
   display: flex;
@@ -26,9 +34,7 @@
   font-size: 0.8rem;
   color: grey;
 }
-hr {
-  opacity: 0.3;
-}
+
 .post-interactions {
   display: flex;
   gap: 0.3rem;
@@ -51,12 +57,12 @@ img {
   height: 100%;
   width: 100%;
 }
-.post-content p {
-  font-size: 0.8rem;
-}
+// .post-content p {
+//   font-size: 0.8rem;
+// // }
 .post-link {
   color: black;
-  font-size: 0.8rem;
+  //   font-size: 0.8rem;
 }
 button.post-likes,
 button.post-comment {
@@ -92,25 +98,24 @@ a.dev-website {
   margin-block-end: 0.5rem;
 }
 
-
 @media screen and (max-width: 600px) {
-  .user-img {
-    height: 12vw;
-    width: 12vw;
-  }
-  button.post-likes {
-    border-radius: 10px;
-    padding-left: 0.8rem;
-    width: 8vw;
-  }
-  button.post-comment {
-    border-radius: 10px;
-    padding-left: 0.8rem;
-    width: 8vw;
-  }
-  .button-text {
-    display: none;
-  }
+  // .user-img {
+  //   height: 12vh;
+  //   width: 12vw;
+  // }
+  // button.post-likes {
+  //   border-radius: 10px;
+  //   padding-left: 0.8rem;
+  //   width: 8vw;
+  // }
+  // button.post-comment {
+  //   border-radius: 10px;
+  //   padding-left: 0.8rem;
+  //   width: 8vw;
+  // }
+  // .button-text {
+  //   display: none;
+  // }
   .author-info {
     display: flex;
     flex-wrap: wrap;

@@ -1,21 +1,21 @@
 @import "./utilities";
 
 #main-grid-area {
-  height: 100%;
   display: grid;
-  width: 90%;
+  width: 70%;
   grid-gap: 10px;
-  grid-template-columns: 30% 50% 20%;
+  grid-template-columns: 25% 55% 20%;
+  //border: 1px solid red;
 
   grid-template-areas: "leftGrid centerGrid rightGrid";
-  margin: 20px auto;
+  margin: 80px auto 30px auto;
   box-sizing: border-box;
 }
 
 @media screen and (max-width: 600px) {
   #main-grid-area {
-    background-color: green;
     grid-template-columns: 100%;
+    width:100%;
     grid-template-areas:
       "leftGrid"
       "centerGrid"
@@ -24,15 +24,19 @@
 }
 
 .left-grid {
-  border: $blackBorder;
+  //border: $blackBorder;
   grid-area: leftGrid;
+  display: flex;
+  flex-direction: column;
 }
 
 .center-grid {
-  border: $blackBorder;
+  // border: $blackBorder;
   grid-area: centerGrid;
+  display: flex;
+  flex-direction: column;
 }
 .right-grid {
-  border: $blackBorder;
+  // border: $blackBorder;
   grid-area: rightGrid;
 }

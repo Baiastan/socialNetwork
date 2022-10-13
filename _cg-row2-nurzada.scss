@@ -1,5 +1,4 @@
 @import "./utilities";
-
 .center-grid-row2{
     padding: 10px; 
     font-family: "Open Sans", sans-serif; 
@@ -36,7 +35,7 @@
   
   .img-content img{
   max-width: 150px; 
-  
+  margin-top: 10px;
   }
   
   .button-content button{
@@ -46,7 +45,6 @@
     color: white;
     border: none;
   }
-  
   .button-content button:hover{
     background-color:#f5f7f8;
   color: black; 
@@ -57,5 +55,37 @@
       padding-right: 10px;
   }
   
+}  
+.center-grid-row2 {
+  @include boxParameters;
+p{
+  @include paragraphStyle;
 }
-  
+}
+.top-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+
+.time {
+  color: rgba(128, 128, 128, 0.987);
+}
+
+.post-text {
+  font-size: 16px;
+}
+
+.img-content img {
+  max-width: 48%;
+}
+.user-name{
+  padding:1rem;
+}
+

@@ -5,104 +5,199 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Social Network</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/7b1e58f7dd.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
-    <header id="header"></header>
-  
+    <!-- <header id="header"></header> -->
+    <header id="header">
+      <!-- Aijamal-->
+      <section class="nav-home-logo">
+        <a href="#"><i class="fa-solid fa-house"></i>Seytech</a>
+      </section>
+
+      <ul class="nav-icons">
+        <li>
+          <a href="#"><i class="fa-solid fa-earth-asia"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa-solid fa-envelope"></i></a>
+        </li>
+      </ul>
+    </header>
     <main id="main-grid-area">
       <section class="left-grid">
-       
-        <div class="left-grid-row1 left-row row"></div>
-        <!-- Zarina-->
-        <div class="left-grid-row2 left-row row"></div>
-        <!-- Zarina-->
+        <div class="left-grid-row1 left-row row">
+          <div class="profile-top">
+            <h4>My Profile</h4>
+            <img
+              alt="user photo"
+              src="https://learn.seytech.co/assets/images/avatars/marat.png"
+            />
+            <hr />
+            <div class="profile-bottom">
+              <div class="job-title">
+                <p><i class="fa-solid fa-pencil"></i>Software Engineer</p>
+              </div>
 
-        <div class="left-grid-row3 left-row row">
-            <p>Interests</p>
-            <table>
-              <tr>
-                <td id="first-two">News</td>
-                <td id="first-two">Seytech</td>
-                <td id="blue">Algos</td>
-                <td id="blue">Games</td>
-                <td id="blue">Friends</td>
-              </tr>
-              <tr>
-                <td id="blue">Games</td>
-                <td id="blue">Friends</td>
-                <td id="dark-grey">Food</td>
-                <td id="grey">Design</td>
-                <td id="light-grey">Art</td>
-              </tr>
-              <tr>
-                <td id="beige">Photos</td>
-              </tr>
-            </table>
-          
+              <div class="location">
+                <p></p>
+                  <i class="fa-solid fa-house left-grid-top-icons"></i>Seattle,
+                  WA
+                </p>
+              </div>
+
+              <div class="date-of-birth">
+                
+                <p><i class="fa-solid fa-cake-candles left-grid-top-icons"></i> April 10</p>
+              </div>
+            </div>
+          </div>
         </div>
 
+        <!-- Zarina's part 2 -->
+
+        <div class="left-grid-row2 left-row row">
+          <button type="button">
+           
+            <p> <i class="fa-solid fa-circle-notch left-grid-icons"></i> My Groups</p>
+          </button>
+
+          <p class="text">Some text..</p>
+
+          <button type="button">
+           
+            <p> <i class="fa-solid fa-calendar-check left-grid-icons"></i> My Events</p>
+          </button>
+
+          <p class="text">Some other text.. </p>
+
+          <button
+            type="button">
+            <p><i class="fa-solid fa-camera left-grid-icons"></i> My Photos</p>
+          </button>
+
+          <div class="photo-images">
+            <img
+              alt="north sky"
+              src="https://images.pexels.com/photos/624015/pexels-photo-624015.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+            <img
+              alt="mountain"
+              src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+            <img
+              alt="forest"
+              src="https://images.pexels.com/photos/1757363/pexels-photo-1757363.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+            <img
+              alt="mountain view"
+              src="https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+            <img
+              alt="wavy ocean"
+              src="https://images.pexels.com/photos/7925859/pexels-photo-7925859.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+            <img
+              alt="snowy mountains"
+              src="https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            />
+          </div>
+        </div>
         <!-- Kamila-->
+        <div class="left-grid-row3 left-row row">
+          <p>Interests</p>
+          <table>
+            <tr>
+              <td id="first-two">News</td>
+              <td id="first-two">Seytech</td>
+              <td id="blue">Algos</td>
+              <td id="blue">Games</td>
+              <td id="blue">Friends</td>
+            </tr>
+            <tr>
+              <td id="blue">Games</td>
+              <td id="blue">Friends</td>
+              <td id="dark-grey">Food</td>
+              <td id="grey">Design</td>
+              <td id="light-grey">Art</td>
+            </tr>
+            <tr>
+              <td id="beige">Photos</td>
+            </tr>
+          </table>
+        </div>
+
         <div class="left-grid-row4 left-row row">
-          
-          <div class="alertbox">
+         
             <i class="fa-solid fa-xmark"></i>
             <p>Hey!</p>
+            <br>
             <p>People are looking at your profile. Find out who.</p>
-          </div>
+        
         </div>
         <!-- Kamila-->
       </section>
 
       <section class="center-grid">
         <!-- center-grid -->
-        <div class="center-grid-row1 center-row row"></div>
+        <div class="center-grid-row1 center-row row">
+          <p>Status: Feeling Blue</p>
+          <button><i class="fa fa-pencil"></i> Post</button>
+        </div>
 
-        <!-- Nurzada  -->
         <div class="center-grid-row2 center-row row">
-      <article class="post-container">
-        <div class="post-author">
-          <div class="author-info">
-            <div class="user-img">
+          <article class="post-container">
+            <div class="post-author">
+              <div class="author-info">
+                <div class="user-img">
+                  <img
+                    src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/rachel.jpeg "
+                    alt="user-picture-placeholder"
+                  />
+                </div>
+                <div class="user-name">
+                  <p>Rachel Sine</p>
+                </div>
+              </div>
+              <div class="author-status">
+                <p>1 min</p>
+              </div>
+            </div>
+            <hr />
+            <p>
+              Next cohort will start soon. We strive for teaching our students
+              the most up-to-date programming technologies. Contact us.
+            </p>
+            <div class="img-content">
               <img
-                src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/rachel.jpeg "
-                alt="user-picture-placeholder"
+                src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/p0.png"
+                alt="seytech"
+                class="picture"
+              />
+              <img
+                class="picture"
+                src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/p1.jpg "
+                alt="coding is problem solving"
               />
             </div>
-            <div class="user-name">
-              <p>Rachel Sine</p>
+            <div class="post-interactions">
+              <button class="post-likes">
+                <i class="fa-solid fa-thumbs-up"></i
+                ><span class="button-text">Like</span>
+              </button>
+              <button class="post-comment">
+                <i class="fa-solid fa-comment"></i
+                ><span class="button-text">Comment</span>
+              </button>
             </div>
-          </div>
-          <div class="author-status">
-            <p>1 min</p>
-          </div>
-        </div>
-        <hr />
-          <p>Next cohort will start soon. We strive for teaching our students the most up-to-date programming technologies. Contact us.
-          </p>
-          <div class="img-content">
-            <img 
-              src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/p0.png"
-              alt="seytech"
-              class="picture"
-            />
-            <img class="picture" src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/p1.jpg " alt="">
-        </div>
-        <div class="post-interactions">
-          <button class="post-likes">
-            <i class="fa-solid fa-thumbs-up"></i
-            ><span class="button-text">Like</span>
-          </button>
-          <button class="post-comment">
-            <i class="fa-solid fa-comment"></i
-            ><span class="button-text">Comment</span>
-          </button>
-        </div>
-      </article>
+          </article>
         </div>
         <div class="center-grid-row3 center-row row">
           <article class="post-container">
@@ -192,7 +287,12 @@
       <section class="right-grid">
         <div class="right-grid-row1 right-row row">
           <p>Upcoming Events:</p>
-          <img class="right-grid-img" src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/event.png" alt="Learn JS/React at Seytech" style="width:100%;"/>
+          <img
+            class="right-grid-img"
+            src="https://learn.seytech.co/assets/projects/html-css/projects/6-social-network/assets/event.png"
+            alt="Learn JS/React at Seytech"
+            style="width: 85%"
+          />
           <p>React Course</p>
           <p>Friday</p>
           <p>15:00</p>
@@ -201,7 +301,11 @@
         <!-- Zhibek-->
         <div class="right-grid-row2 right-row row">
           <p>Friend Request</p>
-          <img src="https://learn.seytech.co/assets/images/avatars/default.jpg" alt="Shiba Inu photo" style="width:50%"/>
+          <img
+            src="https://learn.seytech.co/assets/images/avatars/default.jpg"
+            alt="Shiba Inu photo"
+            style="width: 50%"
+          />
           <p>Shiba Inu</p>
           <button class="yes-btn"><i class="fa fa-check"></i></button>
           <button class="no-btn"><i class="fa fa-remove"></i></button>
@@ -210,13 +314,12 @@
         <div class="right-grid-row3 right-row row">
           <p>ADS</p>
         </div>
-        <br>
+        <br />
         <!-- Zhibek-->
         <div class="right-grid-row4 right-row row">
-          <div> <i class="fa fa-bug w3-xxlarge"></i></div>
+          <div><i class="fa fa-bug w3-xxlarge"></i></div>
         </div>
         <!-- Zhibek-->
-
       </section>
     </main>
 
