@@ -2,10 +2,7 @@
 
 /* Interests*/
 .left-grid-row3 {
-  padding: 12px;
-  box-shadow: 5px 3px 10px 3px gray;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  @include boxParameters();
 
   p {
     margin-bottom: 15px;
@@ -71,12 +68,20 @@ td {
 
 /* Alertbox*/
 
-.alertbox {
+.left-grid-row4 {
+  @include boxParameters;
   padding: 12px;
-  box-shadow: 5px 3px 10px 3px gray;
   background: #dfe5e8;
   position: relative;
-  border-radius: 5px;
+  i {
+    @include primaryButtonStyle();
+    background-color: #bdcbd2;
+    padding: 10px 15px;
+    position: absolute;
+    color: black;
+    right: 0;
+    top: 0;
+  }
 }
 
 // .fa-solid {

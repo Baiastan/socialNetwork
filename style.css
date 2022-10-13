@@ -4,19 +4,32 @@
   font-family: "Open Sans", sans-serif;
 }
 
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
 .center-grid-row2 {
   padding: 10px;
   font-family: "Open Sans", sans-serif;
 }
 
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
 #main-grid-area {
-  height: 100%;
   display: grid;
-  width: 90%;
+  width: 70%;
   grid-gap: 10px;
-  grid-template-columns: 30% 50% 20%;
+  grid-template-columns: 25% 55% 20%;
   grid-template-areas: "leftGrid centerGrid rightGrid";
-  margin: 20px auto;
+  margin: 80px auto 30px auto;
   box-sizing: border-box;
 }
 
@@ -28,17 +41,18 @@
   }
 }
 .left-grid {
-  border: 1px solid black;
   grid-area: leftGrid;
+  display: flex;
+  flex-direction: column;
 }
 
 .center-grid {
-  border: 1px solid black;
   grid-area: centerGrid;
+  display: flex;
+  flex-direction: column;
 }
 
 .right-grid {
-  border: 1px solid black;
   grid-area: rightGrid;
 }
 
@@ -47,14 +61,16 @@
   font-family: "Open Sans", sans-serif;
 }
 
-.center-grid-row2 {
-  padding: 10px;
-  font-family: "Open Sans", sans-serif;
-}
-.center-grid-row2 hr {
+hr {
+  width: 100%;
   border: 0;
   border-top: 1px solid #eee;
   margin: 20px 0;
+}
+
+.center-grid-row2 {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
 }
 
 .top-content {
@@ -86,34 +102,20 @@
   max-width: 150px;
 }
 
-.button-content button {
-  background-color: #199de5;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: white;
-  border: none;
-}
-
-.button-content button:hover {
-  background-color: #f5f7f8;
-  color: black;
-  cursor: pointer;
-}
-
-.button-content i {
-  font-size: 0.8rem;
-  padding-right: 10px;
-}
-
 .center-grid-row2 {
   padding: 10px;
   font-family: "Open Sans", sans-serif;
 }
 
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
 .center-grid {
   /*added grid parameter. delete if there is another one, in the main .css file*/
-  display: grid;
-  row-gap: 10px;
   font-family: sans-serif;
 }
 
@@ -121,9 +123,6 @@
   /* border: 2px solid blue; */
   padding: 1rem;
   box-shadow: 0px 3px 8px hsla(0deg, 0%, 0%, 0.3);
-}
-.post-container hr {
-  opacity: 0.3;
 }
 
 .post-author {
@@ -192,6 +191,7 @@ button.post-likes:hover,
 button.post-comment:hover {
   background-color: lightgrey;
   color: black;
+  cursor: pointer;
 }
 button.post-likes i,
 button.post-comment i {
@@ -265,12 +265,20 @@ a.dev-website {
   font-family: "Open Sans", sans-serif;
 }
 
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
 /* Interests*/
 .left-grid-row3 {
-  padding: 12px;
-  box-shadow: 5px 3px 10px 3px gray;
-  margin-bottom: 20px;
+  box-shadow: 5px 3px 10px 1px lightgrey;
   border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
 }
 .left-grid-row3 p {
   margin-bottom: 15px;
@@ -334,17 +342,49 @@ td {
 }
 
 /* Alertbox*/
-.alertbox {
+.left-grid-row4 {
+  box-shadow: 5px 3px 10px 1px lightgrey;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
   padding: 12px;
-  box-shadow: 5px 3px 10px 3px gray;
   background: #dfe5e8;
   position: relative;
-  border-radius: 5px;
+}
+.left-grid-row4 i {
+  background-color: #199de5;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background-color: #bdcbd2;
+  padding: 10px 15px;
+  position: absolute;
+  color: black;
+  right: 0;
+  top: 0;
+}
+.left-grid-row4 i:hover {
+  background-color: lightgrey;
+  color: black;
+  cursor: pointer;
+}
+.left-grid-row4 i i {
+  font-size: 0.8rem;
+  padding-right: 10px;
 }
 
 .center-grid-row2 {
   padding: 10px;
   font-family: "Open Sans", sans-serif;
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
 }
 
 .right-grid {
@@ -431,6 +471,13 @@ td {
   font-family: "Open Sans", sans-serif;
 }
 
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -442,17 +489,41 @@ td {
   justify-content: flex-start;
   align-items: center;
   background-color: rgb(45, 157, 229);
+  position: fixed;
+  width: 100%;
+  top: 0px;
 }
-
-.nav-home-logo {
+#header .fa-earth-asia,
+#header .fa-user,
+#header .fa-envelope,
+#header .fa-house {
+  padding: 15px 30px;
+  color: white;
+  transition: all 0.2s;
+}
+#header .fa-earth-asia:hover {
+  color: black;
+  background-color: white;
+}
+#header .fa-user:hover {
+  color: black;
+  background-color: white;
+}
+#header .fa-envelope:hover {
+  color: black;
+  background-color: white;
+}
+#header .nav-links > li > a {
+  text-decoration: none;
+}
+#header .nav-home-logo {
   padding: 0 10px;
   background-color: rgb(26, 100, 143);
   color: white;
   cursor: pointer;
   transition: all 0.2s;
 }
-
-.nav-home-logo p {
+#header .nav-home-logo p {
   display: inline-block;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -461,51 +532,31 @@ td {
   color: white;
   transition: all 0.2s;
 }
-
-.nav-home-logo:hover {
+#header .nav-home-logo:hover {
   background-color: rgb(204, 204, 204);
   color: black;
 }
-
-.nav-home-logo p:hover {
+#header .nav-home-logo p:hover {
   color: black;
 }
-
-.fa-house:hover {
+#header .fa-house:hover {
   color: black;
 }
-
-.nav-icons {
+#header .nav-icons {
   list-style: none;
   display: flex;
 }
 
-.fa-earth-asia,
-.fa-user,
-.fa-envelope,
-.fa-house {
-  padding: 15px 30px;
-  color: white;
-  transition: all 0.2s;
+.center-grid-row2 {
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
 }
 
-.fa-earth-asia:hover {
-  color: black;
-  background-color: white;
-}
-
-.fa-user:hover {
-  color: black;
-  background-color: white;
-}
-
-.fa-envelope:hover {
-  color: black;
-  background-color: white;
-}
-
-.nav-links > li > a {
-  text-decoration: none;
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
 }
 
 .center-grid-row2 {
@@ -513,19 +564,20 @@ td {
   font-family: "Open Sans", sans-serif;
 }
 
-.center-grid-row2 {
-  padding: 10px;
-  font-family: "Open Sans", sans-serif;
+hr {
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
 }
 
 #main-grid-area {
-  height: 100%;
   display: grid;
-  width: 90%;
+  width: 70%;
   grid-gap: 10px;
-  grid-template-columns: 30% 50% 20%;
+  grid-template-columns: 25% 55% 20%;
   grid-template-areas: "leftGrid centerGrid rightGrid";
-  margin: 20px auto;
+  margin: 80px auto 30px auto;
   box-sizing: border-box;
 }
 
@@ -537,17 +589,18 @@ td {
   }
 }
 .left-grid {
-  border: 1px solid black;
   grid-area: leftGrid;
+  display: flex;
+  flex-direction: column;
 }
 
 .center-grid {
-  border: 1px solid black;
   grid-area: centerGrid;
+  display: flex;
+  flex-direction: column;
 }
 
 .right-grid {
-  border: 1px solid black;
   grid-area: rightGrid;
 }
 
@@ -557,11 +610,26 @@ td {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.3);
 }
 .left-grid-row1 img {
   border-radius: 50%;
   width: 35%;
   margin: 10px 10px;
+}
+.left-grid-row1 .profile-bottom {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 100%;
+}
+.left-grid-row1 .profile-bottom i {
+  margin-right: 25px;
+  color: grey;
+  font-size: 15px;
+}
+.left-grid-row1 .profile-bottom div {
+  padding: 10px;
 }
 
 .profile-top {
@@ -577,41 +645,32 @@ td {
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 10px;
-  height: 55%;
-  padding: 0px;
-  margin: 0px;
-  grid-template-columns: 1;
-  grid-template-rows: 2/3;
+  border: 1px solid rgba(128, 128, 128, 0.3);
 }
-
-.my-groups,
-.my-events,
-.my-photos {
-  display: flex;
-  align-items: center;
-  color: white;
-}
-
-.left-grid-icons {
-  margin-right: 20px;
-}
-
-.text,
-.left-grid-icons {
-  margin-left: 10px;
-}
-
-.clickable {
+.left-grid-row2 button {
   background-color: #199de5;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
   border: none;
   width: 100%;
+  text-align: left;
 }
-
-.clickable:hover {
+.left-grid-row2 button:hover {
   background-color: lightgrey;
   color: black;
-  text-decoration: none;
-  border: none;
+  cursor: pointer;
+}
+.left-grid-row2 button i {
+  font-size: 0.8rem;
+  padding-right: 10px;
+}
+.left-grid-row2 button i {
+  margin-right: 15px;
+}
+.left-grid-row2 .text {
+  font-size: 20px;
+  margin: 15px;
 }
 
 .photo-images {
@@ -621,9 +680,9 @@ td {
   flex-wrap: wrap;
 }
 .photo-images img {
-  width: 35%;
-  height: 30%;
-  margin: 1em;
+  width: 30%;
+  height: 20%;
+  margin: 0.5em;
 }
 
 @media screen and (max-width: 600px) {
