@@ -14,8 +14,8 @@
 
 @media screen and (max-width: 600px) {
   #main-grid-area {
-    background-color: green;
     grid-template-columns: 100%;
+    width:100%;
     grid-template-areas:
       "leftGrid"
       "centerGrid"

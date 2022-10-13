@@ -1,16 +1,23 @@
 @import "./utilities";
 
-.center-grid {
-  /*added grid parameter. delete if there is another one, in the main .css file*/
-  // display: grid;
-  //row-gap: 10px;
-  font-family: sans-serif;
+.center-grid-row3, .center-grid-row4{
+  @include boxParameters;
+  p {
+    @include paragraphStyle;
+  }
 }
-.post-container {
-  /* border: 2px solid blue; */
-  padding: 1rem;
-  box-shadow: 0px 3px 8px hsl(0deg 0% 0% / 0.3);
-}
+// .center-grid {
+ 
+//   /*added grid parameter. delete if there is another one, in the main .css file*/
+//   // display: grid;
+//   //row-gap: 10px;
+//   // font-family: sans-serif;
+// }
+// .post-container {
+//   /* border: 2px solid blue; */
+//   // padding: 1rem;
+//   // box-shadow: 0px 3px 8px hsl(0deg 0% 0% / 0.3);
+// }
 .post-author {
   /* border: 1px solid green; */
   display: flex;
@@ -49,12 +56,12 @@ img {
   height: 100%;
   width: 100%;
 }
-.post-content p {
-  font-size: 0.8rem;
-}
+// .post-content p {
+//   font-size: 0.8rem;
+// // }
 .post-link {
   color: black;
-  font-size: 0.8rem;
+//   font-size: 0.8rem;
 }
 button.post-likes,
 button.post-comment {
@@ -92,7 +99,7 @@ a.dev-website {
 
 @media screen and (max-width: 600px) {
   .user-img {
-    height: 12vw;
+    height: 12vh;
     width: 12vw;
   }
   button.post-likes {

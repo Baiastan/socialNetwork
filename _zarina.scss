@@ -16,7 +16,10 @@
 
 .left-grid-row1 {
   @include boxParameters();
-
+h4{
+  font-family: "open sans", sans-serif;
+  font-size:1.2rem;
+}
   img {
     border-radius: 50%;
     width: 35%;
@@ -28,6 +31,7 @@
     flex-direction: column;
     text-align: left;
     width: 100%;
+    @include paragraphStyle;
 
     i {
       margin-right: 25px;
@@ -60,7 +64,8 @@
     }
   }
   .text {
-    font-size: 20px;
+    @include paragraphStyle;
+    // font-size: 20px;
     margin: 15px;
   }
 }

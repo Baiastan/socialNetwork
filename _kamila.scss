@@ -4,6 +4,7 @@
 /* Interests*/
 .left-grid-row3 {
   @include boxParameters();
+  font-family: "open sans", sans-serif;
 
 
         td {
@@ -64,6 +65,7 @@
       }
 
     .left-grid-row4 {
+      font-family:"open sans", sans-serif;
         .alertbox {
             padding: 12px;
             box-shadow: 5px 3px 10px 3px gray;
@@ -109,11 +111,11 @@ td {
   font-size: 12px;
   display: inline-block;
 }
-
+    }
 /* Alertbox*/
 
 .left-grid-row4 {
-  @include boxParameters;
+  @include boxParameters();
   padding: 12px;
   background: #dfe5e8;
   position: relative;
@@ -127,7 +129,6 @@ td {
     top: 0;
   }
 }
-
 // .fa-solid {
 //     @include primaryButtonStyle();
 //   background-color: #BDCBD2;
@@ -139,4 +140,3 @@ td {
 // }
 
 //Put your scc codes here please.
-

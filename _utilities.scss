@@ -22,10 +22,10 @@ $blackBorder: 1px solid black;
   }
 }
 
-.center-grid-row2 {
-  padding: 10px;
-  font-family: "Open Sans", sans-serif;
-}
+// .center-grid-row2 {
+//   padding: 10px;
+//   font-family: "Open Sans", sans-serif;
+// } => this part is repeated on another file, removing from here.
 
 @mixin boxParameters {
   box-shadow: 5px 3px 10px 1px lightgrey;
@@ -40,4 +40,11 @@ hr {
   border: 0;
   border-top: 1px solid #eee;
   margin: 20px 0;
+}
+
+@mixin paragraphStyle{
+  font-family: "Open Sans", sans-serif;
+  font-size:1rem;
+  text-align:justify;
+  padding-right:1rem;
 }
