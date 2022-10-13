@@ -1,23 +1,23 @@
 @import "./utilities";
 
-body {
-    font-family: "Open Sans", sans-serif;
-}
+
 /* Interests*/
-.wrapper1 {
+.left-grid-row3 {
     padding: 12px;
      box-shadow: 5px 3px 10px 3px gray;
      margin-bottom:20px;
-
-  border-radius: 5px;
+     border-radius: 5px;
+     
+     p {
+        margin-bottom: 15px;
+          margin-top: 15px;
+          margin-left: 3px;
+      
+      }
+     
 }
 
-p {
-  margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: 3px;
 
-}
 
 #first-two {
     color: white;
