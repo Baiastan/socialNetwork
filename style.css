@@ -265,6 +265,7 @@ a.dev-website {
   font-family: "Open Sans", sans-serif;
 }
 
+
 hr {
   width: 100%;
   border: 0;
@@ -273,6 +274,7 @@ hr {
 }
 
 /* Interests*/
+
 .left-grid-row3 {
   box-shadow: 5px 3px 10px 1px lightgrey;
   border-radius: 5px;
@@ -285,8 +287,11 @@ hr {
   margin-top: 15px;
   margin-left: 3px;
 }
-
-#first-two {
+.left-grid-row3 td {
+  font-size: 12px;
+  display: inline-block;
+}
+.left-grid-row3 #first-two {
   color: white;
   background: #076490;
   padding: 4px;
@@ -294,8 +299,7 @@ hr {
   padding-right: 9px;
   margin: 2.5px;
 }
-
-#blue {
+.left-grid-row3 #blue {
   color: white;
   background: #199de5;
   padding: 4px;
@@ -303,32 +307,28 @@ hr {
   padding-right: 9px;
   margin: 2.5px;
 }
-
-#dark-grey {
+.left-grid-row3 #dark-grey {
   background: #9eb1bb;
   padding: 4px;
   padding-left: 9px;
   padding-right: 9px;
   margin: 2.5px;
 }
-
-#grey {
+.left-grid-row3 #grey {
   background: #becbd2;
   padding: 4px;
   padding-left: 9px;
   padding-right: 9px;
   margin: 2.5px;
 }
-
-#light-grey {
+.left-grid-row3 #light-grey {
   background: #dfe5e8;
   padding: 4px;
   padding-left: 9px;
   padding-right: 9px;
   margin: 2.5px;
 }
-
-#beige {
+.left-grid-row3 #beige {
   background: #f4f7f8;
   padding: 4px;
   padding-left: 9px;
@@ -348,6 +348,7 @@ td {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid rgba(128, 128, 128, 0.3);
+
   padding: 12px;
   background: #dfe5e8;
   position: relative;
@@ -371,6 +372,27 @@ td {
   cursor: pointer;
 }
 .left-grid-row4 i i {
+  font-size: 0.8rem;
+  padding-right: 10px;
+}
+.left-grid-row4 .fa-solid {
+  background-color: #199de5;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  background-color: #BDCBD2;
+  padding: 10px 15px;
+  position: absolute;
+  color: black;
+  right: 0;
+  top: 0;
+}
+.left-grid-row4 .fa-solid:hover {
+  background-color: lightgrey;
+  color: black;
+}
+.left-grid-row4 .fa-solid i {
   font-size: 0.8rem;
   padding-right: 10px;
 }

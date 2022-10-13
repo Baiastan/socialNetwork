@@ -1,33 +1,77 @@
 @import "./utilities";
 
+
 /* Interests*/
 .left-grid-row3 {
   @include boxParameters();
 
-  p {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    margin-left: 3px;
-  }
-}
 
-#first-two {
-  color: white;
-  background: $homeButtonColor;
-  padding: 4px;
-  padding-left: 9px;
-  padding-right: 9px;
-  margin: 2.5px;
-}
+        td {
+            font-size: 12px;
+            display: inline-block;
+          }
 
-#blue {
-  color: white;
-  background: $primaryBlueButtonColor;
-  padding: 4px;
-  padding-left: 9px;
-  padding-right: 9px;
-  margin: 2.5px;
-}
+        #first-two {
+            color: white;
+            background: $homeButtonColor;
+            padding: 4px;
+            padding-left: 9px;
+            padding-right: 9px;
+            margin: 2.5px;
+          }
+          
+          #blue {
+            color: white;
+            background: $primaryBlueButtonColor;
+            padding: 4px;
+            padding-left: 9px;
+            padding-right: 9px;
+            margin: 2.5px;
+          }
+          
+          #dark-grey {
+            background: #9eb1bb;
+            padding: 4px;
+            padding-left: 9px;
+            padding-right: 9px;
+            margin: 2.5px;
+          }
+          
+          #grey {
+            background: #becbd2;
+            padding: 4px;
+            padding-left: 9px;
+            padding-right: 9px;
+            margin: 2.5px;
+          }
+          
+          #light-grey {
+            background: #dfe5e8;
+            padding: 4px;
+            padding-left: 9px;
+            padding-right: 9px;
+            margin: 2.5px;
+          }
+          
+          #beige {
+            background: #f4f7f8;
+            padding: 4px;
+            padding-left: 9px;
+            padding-right: 9px;
+            margin: 2.5px;
+          }          
+      
+      }
+
+    .left-grid-row4 {
+        .alertbox {
+            padding: 12px;
+            box-shadow: 5px 3px 10px 3px gray;
+            background: #dfe5e8;
+            position: relative;
+            border-radius: 5px;
+          }
+
 
 #dark-grey {
   background: #9eb1bb;
@@ -95,3 +139,4 @@ td {
 // }
 
 //Put your scc codes here please.
+
