@@ -16,47 +16,40 @@
   width: 100%;
   top: 0px;
 
-  .fa-earth-asia,
-  .fa-user,
-  .fa-envelope,
-  .fa-house {
+  i {
     padding: 15px 30px;
     color: white;
     transition: all 0.2s;
   }
 
-  .fa-earth-asia:hover {
+  i:hover {
     color: black;
     background-color: white;
   }
 
-  .fa-user:hover {
-    color: black;
-    background-color: white;
-  }
-  .fa-envelope:hover {
-    color: black;
-    background-color: white;
-  }
-
-  .nav-links > li > a {
+  a {
     text-decoration: none;
   }
 
   .nav-home-logo {
-    padding: 0 10px;
+    padding: 0 20px;
     background-color: rgb(26, 100, 143);
     color: white;
     cursor: pointer;
     transition: all 0.2s;
+
+    i {
+      margin-right: 15px;
+      font-size: 1rem;
+    }
   }
 
-  .nav-home-logo p {
+  .nav-home-logo a {
     display: inline-block;
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 18px;
-    padding: 10px 5px;
+    padding: 15px 30px;
     color: white;
     transition: all 0.2s;
   }
@@ -66,16 +59,23 @@
     color: black;
   }
 
-  .nav-home-logo p:hover {
-    color: black;
-  }
-
-  .fa-house:hover {
-    color: black;
-  }
-
   .nav-icons {
     list-style: none;
     display: flex;
+  }
+  @media screen and (max-width: 600px) {
+    .nav-home-logo {
+      display: flex;
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+
+        i {
+          padding-right: 10px;
+        }
+      }
+    }
   }
 }

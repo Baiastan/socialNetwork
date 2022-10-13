@@ -1,13 +1,14 @@
 @import "./utilities";
 
-.center-grid-row3, .center-grid-row4{
+.center-grid-row3,
+.center-grid-row4 {
   @include boxParameters;
   p {
     @include paragraphStyle;
   }
 }
 // .center-grid {
- 
+
 //   /*added grid parameter. delete if there is another one, in the main .css file*/
 //   // display: grid;
 //   //row-gap: 10px;
@@ -61,7 +62,7 @@ img {
 // // }
 .post-link {
   color: black;
-//   font-size: 0.8rem;
+  //   font-size: 0.8rem;
 }
 button.post-likes,
 button.post-comment {
@@ -98,23 +99,23 @@ a.dev-website {
 }
 
 @media screen and (max-width: 600px) {
-  .user-img {
-    height: 12vh;
-    width: 12vw;
-  }
-  button.post-likes {
-    border-radius: 10px;
-    padding-left: 0.8rem;
-    width: 8vw;
-  }
-  button.post-comment {
-    border-radius: 10px;
-    padding-left: 0.8rem;
-    width: 8vw;
-  }
-  .button-text {
-    display: none;
-  }
+  // .user-img {
+  //   height: 12vh;
+  //   width: 12vw;
+  // }
+  // button.post-likes {
+  //   border-radius: 10px;
+  //   padding-left: 0.8rem;
+  //   width: 8vw;
+  // }
+  // button.post-comment {
+  //   border-radius: 10px;
+  //   padding-left: 0.8rem;
+  //   width: 8vw;
+  // }
+  // .button-text {
+  //   display: none;
+  // }
   .author-info {
     display: flex;
     flex-wrap: wrap;
